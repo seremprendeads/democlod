@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -560,12 +561,180 @@ body {
         </div>
       </div>
     </div>
-
     <!-- Process Steps -->
-    <div class="grid md:grid-cols-2 gap-6 sm:gap-8 slide-up">
-      <div class="process-card card-glass rounded-2xl p-6 sm:p-8">
-        <div class="flex items-center mb-4 sm:mb-6">
-          <div class="w-8 h-8 bg-gold text-black rounded-full flex items-center justify-center font-bold mr-4 text-sm sm:text-base">1</div>
-          <h3 class="text-lg sm:text-xl font-bold">Diagnóstico en Profundidad</h3>
+            <div class="grid md:grid-cols-2 gap-8 slide-up">
+                <div class="card-glass rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-8 h-8 bg-gold text-black rounded-full flex items-center justify-center font-bold mr-4">1</div>
+                        <h3 class="text-xl font-bold">Diagnóstico en Profundidad</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li>• Mapeamos los procesos y sistemas actuales</li>
+                        <li>• Identificamos las oportunidades de mejora</li>
+                        <li>• Informe estratégico con mejores targetes</li>
+                    </ul>
+                </div>
+
+                <div class="card-glass rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-8 h-8 bg-gold text-black rounded-full flex items-center justify-center font-bold mr-4">2</div>
+                        <h3 class="text-xl font-bold">Diseño Estratégico</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li>• Definimos una estrategia personalizada</li>
+                        <li>• Establecemos herramientas y automatizaciones a implementar</li>
+                        <li>• Estructuramos el método de escalado idóneo</li>
+                    </ul>
+                </div>
+
+                <div class="card-glass rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-8 h-8 bg-gold text-black rounded-full flex items-center justify-center font-bold mr-4">3</div>
+                        <h3 class="text-xl font-bold">Integración del Ecosistema</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li>• Creación del método de ventas optimizado</li>
+                        <li>• Preparación de los CRM</li>
+                        <li>• Automatización de procesos, herramientas y workflows</li>
+                    </ul>
+                </div>
+
+                <div class="card-glass rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-8 h-8 bg-gold text-black rounded-full flex items-center justify-center font-bold mr-4">4</div>
+                        <h3 class="text-xl font-bold">Optimización y Escalabilidad</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li>• Monitoreo de datos individuales</li>
+                        <li>• Ajustes estratégicos basados en métricas</li>
+                        <li>• Capacitación de los equipos de ventas comercial</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+               <!-- Boton-->
+  <div class="neon-card mt-8">
+    <div class="neon-bg blob"></div>
+    <div class="neon-blob"></div>
+    <a href="#" class="neon-btn">
+      Solicitar Consultoría Gratuita
+    </a>
+  </div>
+            </div>
         </div>
-        <ul class="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-300">
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 glass-effect py-12 px-4 mt-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="w-12 h-12  rounded-full flex items-center justify-center mr-4">
+                        <img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750376445/logo_ithw8g.avif" alt="logo">
+                    </div>
+                    </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 text-sm mb-2">
+                        Contacta con nosotros al proporcionar tu información, acepta los de
+                        la Política de Privacidad y las Condiciones de Uso.
+                    </p>
+                    <p class="text-gray-500 text-xs">
+                        © 2025 Closed Deals. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <div class="flex justify-center space-x-8 text-sm text-gray-400">
+                    <a href="#" class="hover:text-gold transition-colors">Aviso Legal</a>
+                    <a href="#" class="hover:text-gold transition-colors">Términos y Condiciones</a>
+                    <a href="#" class="hover:text-gold transition-colors">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script>
+        //Menu haburguesa
+         const toggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    toggle.innerHTML = isOpen ? '&times;' : '&#9776;';
+  });
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with slide-up class
+        document.querySelectorAll('.slide-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Button hover effects
+        document.querySelectorAll('.btn-gold').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 10px 25px rgba(255, 215, 0, 0.3)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+
+
+        // Observe all elements with section-hidden class
+        document.querySelectorAll('.section-hidden').forEach(el => {
+            observer.observe(el);
+        });
+ document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('[data-count]');
+    
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-count');
+        const count = +counter.innerText;
+        const increment = Math.ceil(target / 100); // velocidad
+        
+        if (count < target) {
+          counter.innerText = count + increment > target ? target : count + increment;
+          setTimeout(updateCount, 30); // velocidad de la animación
+        } else {
+          counter.innerText = target.toLocaleString(); // con separador de miles
+        }
+      };
+
+      updateCount();
+    });
+  });
+    </script>
+</body>
+</html>
