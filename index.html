@@ -12,7 +12,7 @@
             theme: {
                 extend: {
                     colors: {
-                        gold: '#FFD700',
+                        gold: '#f5bb23',
                         'gold-dark': '#B8860B',
                     },
                     fontFamily: {
@@ -33,7 +33,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #B8860B, #FFD700, #e6e6e6);
+  background: linear-gradient(135deg, #f5bb23, #ebba40, #e6e6e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -257,47 +257,6 @@ body {
   }
 }
 
-/* Mejoras responsive adicionales */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem !important;
-    line-height: 1.1;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.1rem !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2rem !important;
-    line-height: 1.2;
-  }
-  
-  .hero-subtitle {
-    font-size: 1rem !important;
-  }
-  
-  .section-title {
-    font-size: 2rem !important;
-  }
-}
-
-/* Logo responsive */
-.logo img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-}
-
-@media (max-width: 640px) {
-  .logo img {
-    width: 40px;
-    height: 40px;
-  }
-}
-
 /* Video responsive mejorado */
 .video-container {
   position: relative;
@@ -328,18 +287,6 @@ body {
   }
 }
 
-/* Estadísticas responsive */
-@media (max-width: 640px) {
-  .stats-number {
-    font-size: 2rem !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .stats-number {
-    font-size: 1.5rem !important;
-  }
-}
     </style>
 </head>
 <body class="relative min-h-screen bg-black text-white">
@@ -392,15 +339,18 @@ body {
 <section class="relative z-10 min-h-screen flex items-center justify-center px-4 pt-24 sm:pt-28 md:pt-36 pb-12 sm:pb-24">
   <div class="max-w-4xl mx-auto text-center fade-in w-full">
     <div class="inline-block bg-gold text-black px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold mb-6 sm:mb-8">
-       MÁS VENTAS MENOS ESFUERZO
+       Más Ventas - Menos Esfuerzo
     </div>
-    <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 sm:mb-6 text-shadow leading-tight"> 
-      Líderes en<br>
-      <span class="text-gold">Estrategias Comerciales</span>
+    <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 sm:mb-6"> 
+      Llevamos tus Ventas<br>
+      <span class="gradient-text">al Siguiente Nivel </span>
     </h1>
-     <p class="hero-subtitle text-base sm:text-lg md:text-xl lg:text-1xl mb-8 sm:mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
-      Deja de depender de equipos comerciales ineficientes o improvisados. Es hora de transformar tu presupuesto en resultados reales, escalar sin límites y convertir cada euro invertido en ventas automatizadas y predecibles.
-    </p>
+<p class="hero-subtitle text-sm sm:text-lg md:text-lg mb-6 sm:mb-10 text-gray-300 max-w-3xl mx-auto leading-relaxed font-light px-4 sm:px-6">
+  Deja de depender de equipos comerciales ineficientes o improvisados. Es hora de transformar tu presupuesto en resultados reales, escalar sin límites y convertir cada euro invertido en ventas automatizadas y predecibles.
+</p>
+
+
+
 
 
     <!-- Hero Video -->
@@ -426,109 +376,119 @@ body {
     <div class="overflow-hidden py-8 sm:py-12 -mx-4">
       <div class="logo-slider relative w-full">
         <div class="slide-track flex animate-scroll whitespace-nowrap">
-        <!-- Duplicados para loop infinito -->
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445809/perple_a2akl4.png" class="h-8 sm:h-12" alt="Perplexity"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445806/openia_dzaizv.png" class="h-8 sm:h-12" alt="openia"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750446891/n8n_xft2pb.png" class="h-8 sm:h-12" alt="n8n"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445795/make_jggxhd.png" class="h-8 sm:h-12" alt="make"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445791/linkeding_y0zert.png" class="h-8 sm:h-12" alt="linkeding"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445787/instantly_yfmfcq.png" class="h-8 sm:h-12" alt="instantly"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445784/highlevel_bg2eno.png" class="h-8 sm:h-12" alt="highlevel"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445780/fathom_qpzpzu.png" class="h-8 sm:h-12" alt="fathom"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750446867/clay_yx4yxm.png" class="h-8 sm:h-12" alt="clay"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445773/apollo_cc5co3.png" class="h-8 sm:h-12" alt="apollo"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445769/api_sam2ak.png" class="h-8 sm:h-12" alt="api"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445766/airtable_ra2yvv.png" class="h-8 sm:h-12" alt="airtable"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445798/meta_ldycxl.png" class="h-8 sm:h-12" alt="meta"></div>
+          <!-- Logos originales -->
+     <!-- Logos originales -->
+     <!-- Duplicados para loop infinito -->
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445809/perple_a2akl4.png" class="h-8 sm:h-12 rounded-lg" alt="Apify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445806/openia_dzaizv.png" class="h-8 sm:h-12 rounded-lg" alt="Trigify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750446891/n8n_xft2pb.png" class="h-8 sm:h-12 rounded-lg" alt="Perplexity"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445795/make_jggxhd.png" class="h-8 sm:h-12 rounded-lg" alt="OpenAI"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445791/linkeding_y0zert.png" class="h-8 sm:h-12 filter" alt="Clay"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445787/instantly_yfmfcq.png" class="h-8 sm:h-12 rounded-lg" alt="Apify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445784/highlevel_bg2eno.png" class="h-8 sm:h-12 rounded-lg" alt="Trigify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445780/fathom_qpzpzu.png" class="h-8 sm:h-12 rounded-lg" alt="Perplexity"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750446867/clay_yx4yxm.png" class="h-8 sm:h-12 rounded-lg" alt="OpenAI"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445773/apollo_cc5co3.png" class="h-8 sm:h-12 rounded-lg" alt="Clay"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445769/api_sam2ak.png" class="h-8 sm:h-12 rounded-lg" alt="Apify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445766/airtable_ra2yvv.png" class="h-8 sm:h-12 rounded-lg" alt="Trigify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445798/meta_ldycxl.png" class="h-8 sm:h-12 rounded-lg" alt="Perplexity"></div>
           
           
           <!-- Duplicados para loop infinito -->
-       <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445809/perple_a2akl4.png" class="h-8 sm:h-12" alt="Perplexity"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445806/openia_dzaizv.png" class="h-8 sm:h-12" alt="openia"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750446891/n8n_xft2pb.png" class="h-8 sm:h-12" alt="n8n"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445795/make_jggxhd.png" class="h-8 sm:h-12" alt="make"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445791/linkeding_y0zert.png" class="h-8 sm:h-12" alt="linkeding"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445787/instantly_yfmfcq.png" class="h-8 sm:h-12" alt="instantly"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445784/highlevel_bg2eno.png" class="h-8 sm:h-12" alt="highlevel"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445780/fathom_qpzpzu.png" class="h-8 sm:h-12" alt="fathom"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750446867/clay_yx4yxm.png" class="h-8 sm:h-12" alt="clay"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445773/apollo_cc5co3.png" class="h-8 sm:h-12" alt="apollo"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445769/api_sam2ak.png" class="h-8 sm:h-12" alt="api"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445766/airtable_ra2yvv.png" class="h-8 sm:h-12" alt="airtable"></div>
-          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445798/meta_ldycxl.png" class="h-8 sm:h-12" alt="meta"></div>
+     <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445813/trify_wspqvr.png" class="h-8 sm:h-12 rounded-lg" alt="Clay"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445809/perple_a2akl4.png" class="h-8 sm:h-12 rounded-lg" alt="Apify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445806/openia_dzaizv.png" class="h-8 sm:h-12 rounded-lg" alt="Trigify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750446891/n8n_xft2pb.png" class="h-8 sm:h-12 rounded-lg" alt="Perplexity"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445795/make_jggxhd.png" class="h-8 sm:h-12 rounded-lg" alt="OpenAI"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445791/linkeding_y0zert.png" class="h-8 sm:h-12 filter" alt="Clay"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445787/instantly_yfmfcq.png" class="h-8 sm:h-12 rounded-lg" alt="Apify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445784/highlevel_bg2eno.png" class="h-8 sm:h-12 rounded-lg" alt="Trigify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445780/fathom_qpzpzu.png" class="h-8 sm:h-12 rounded-lg" alt="Perplexity"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750446867/clay_yx4yxm.png" class="h-8 sm:h-12 rounded-lg" alt="OpenAI"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445773/apollo_cc5co3.png" class="h-8 sm:h-12 rounded-lg" alt="Clay"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445769/api_sam2ak.png" class="h-8 sm:h-12 rounded-lg" alt="Apify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445766/airtable_ra2yvv.png" class="h-8 sm:h-12 rounded-lg" alt="Trigify"></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750445798/meta_ldycxl.png" class="h-8 sm:h-12 rounded-lg" alt="Perplexity"></div>
+          
           
         </div>
       </div>
     </div>
-
-    <!-- clientes -->
-    <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 mb-8 sm:mb-12 mt-12 sm:mt-24 opacity-60 px-4">
-      <div class="w-20 sm:w-24 h-10 sm:h-12 bg-white/10 rounded-lg flex items-center justify-center">
-        <span class="text-xs sm:text-sm font-bold">CLIENTE 1</span>
-      </div>
-      <div class="w-20 sm:w-24 h-10 sm:h-12 bg-white/10 rounded-lg flex items-center justify-center">
-        <span class="text-xs sm:text-sm font-bold">CLIENTE 2</span>
-      </div>
-      <div class="w-20 sm:w-24 h-10 sm:h-12 bg-white/10 rounded-lg flex items-center justify-center">
-        <span class="text-xs sm:text-sm font-bold">CLIENTE 3</span>
-      </div>
-    </div>
-
-    <!-- Estadísticas -->
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 p-4 sm:p-8 rounded-lg bg-white/10">
-      <div class="text-center">
-        <div class="stats-number text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold gradient-text bg-clip-text text-transparent mb-1 sm:mb-2" data-count="3100">0</div>
-        <div class="text-gray-400 text-xs sm:text-sm">Reuniones Agendadas</div>
-      </div>
-      <div class="text-center">
-        <div class="stats-number text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold gradient-text bg-clip-text text-transparent mb-1 sm:mb-2">3.2M€</div>
-        <div class="text-gray-400 text-xs sm:text-sm">New Revenue</div>
-      </div>
-      <div class="text-center">
-        <div class="stats-number text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold gradient-text bg-clip-text text-transparent mb-1 sm:mb-2">150+</div>
-        <div class="text-gray-400 text-xs sm:text-sm">Clientes Activos</div>
-      </div>
-      <div class="text-center">
-        <div class="stats-number text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold gradient-text bg-clip-text text-transparent mb-1 sm:mb-2">98%</div>
-        <div class="text-gray-400 text-xs sm:text-sm">Tasa de Éxito</div>
-      </div>
-    </div>
-  </div>
 </section>
 
+<section class="relative bg-[url('https://res.cloudinary.com/dliredzt9/image/upload/v1750376447/patron3_cikylz.jpg')] bg-cover bg-center pb-24 pt-8 fixed">
+ <!-- Capa oscura encima de la imagen -->
+  <div class="absolute inset-0 bg-black/95"></div>
+<!-- Título y párrafo intro -->
+<div class="relative z-10 px-4 text-center max-w-3xl mx-auto">
+<h2 class="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 gradient-text">
+  ¿QUIÉNES SOMOS?
+</h2>
+
+<p class="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed px-0 sm:px-24">
+  Tras años como consultores independientes generando resultados para clientes como:
+</p>
+
+
+</div>
+<!-- Estadísticas -->
+<div class="relative z-10 max-w-5xl mx-auto p-6 sm:p-8 text-center">
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8">
+    <div>
+      <div id="facturacion" class="stats-number text-3xl sm:text-2xl md:text-4xl lg:text-5xl font-bold gradient-text bg-clip-text text-transparent mb-1 sm:mb-2 flex items-center justify-center" data-count="3000000">
+        0
+        <span class="inline-flex items-center ml-2">
+          M
+          <img src="up-flecha.png" alt="arrow up" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 ml-1 inline-block">
+        </span>
+      </div>
+      <div class="text-gray-400 text-base sm:text-sm px-2">+3 Millones € de Facturación Generada</div>
+    </div>
+    <div>
+      <div class="stats-number text-3xl sm:text-2xl md:text-4xl lg:text-5xl font-bold gradient-text bg-clip-text text-transparent mb-1 sm:mb-2">37%</div>
+      <div class="text-gray-400 text-base sm:text-sm px-2">37% Promedio Nuevas Ventas Cerradas</div>
+    </div>
+    <div>
+      <div class="stats-number text-3xl sm:text-2xl md:text-4xl lg:text-5xl font-bold gradient-text bg-clip-text text-transparent mb-1 sm:mb-2">29%</div>
+      <div class="text-gray-400 text-base sm:text-sm px-2">29% Reducción de Tiempos Operativos</div>
+    </div>
+    
+    <div class="block sm:hidden -m-[04px]">
+      <img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750376445/logo_ithw8g.avif" alt="logo" class="w-24 mx-auto object-contain">
+    </div>
+  </div>
+</div>
+
+
 <!-- What is Closed Deals Section -->
-<section class="relative z-10 py-12 sm:py-20 px-4">
+<div class="relative z-10 py-12 sm:py-20 px-4">
   <div class="max-w-7xl mx-auto">
     <div class="grid lg:grid-cols-2 gap-8 sm:gap-16 items-center">
       <div class="slide-up order-2 lg:order-1">
         <div class="p-4 sm:p-8">
           <div class="flex items-center justify-center">
-            <img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750376446/nosotros_uqeijb.avif" alt="intro" class="rounded-lg w-full max-w-md lg:max-w-none">
+            <img src="https://res.cloudinary.com/dliredzt9/image/upload/v1750459746/nosotros_uqeijb_1_b3ebje.avif" alt="intro" class="rounded-lg w-full max-w-md lg:max-w-none">
           </div>
         </div>
       </div>
       
       <div class="flex flex-col items-center text-center lg:items-start lg:text-left order-1 lg:order-2">
-        <h2 class="section-title text-3xl sm:text-4xl md:text-5xl font-black mb-6 sm:mb-8 text-shadow">
-          ¿Qué es <span class="text-gold">Closed Deals?</span>
-        </h2>
-        <p class="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-          Closed Deals es una consultora especializada en Escalado Comercial. 
-          Impulsamos el crecimiento de tu negocio a través de 
-          <strong class="text-gold">Estrategias Comerciales efectivas</strong> y los 
-          <strong class="text-gold">Sistemas de Inteligencia Artificial</strong> más avanzados.
-        </p>
-        <p class="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-          Nuestros con una misión clara: ayudar a empresas a cerrar más 
-          ventas y que sus equipos comerciales no perdamos un solo y prospectos comerciales, 
-          sean más. formando nuevos tiempo y clientes.
-        </p>
-        <p class="text-base sm:text-lg text-gray-300 mb-8 sm:mb-10 leading-relaxed">
-          Contamos con Metodologías avanzadas que optimizan los resultados 
-          desde el primer día. Pero puede actuar, lo propinamos el nuestro 
-          objetivo lo administrativo.
-        </p>
-        
+<h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-black mb-6 sm:mb-8 text-shadow px-4 py-2 sm:px-0 sm:py-0">
+  Decidimos dar un nombre a nuestro trayectoria
+  <span class="block text-gold">Construida con resultados:</span>
+  <span class="block text-5xl mt-4">Closed Deals</span>
+</h2>
+
+<p class="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed px-4 py-2 sm:px-0 sm:py-0">
+  Somos una consultora especializada en escalado comercial y automatización de procesos.
+  Nacimos con una misión clara:
+</p>
+<p class="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed px-4 py-2 sm:px-0 sm:py-0">
+  Ayudar a empresas a conseguir más clientes con menos esfuerzo operativo.
+  <strong class="text-gold">Diseñamos las soluciones que impulsan</strong> la captación como la conversión de clientes potenciales, así como
+  <strong class="text-gold">Automatizamos tareas manuales y repetitiva</strong> para que puedas poner el foco en lo verdaderamente importante: <b>CERRAR</b>
+</p>
+
         <!-- Boton-->
         <div class="neon-card">
           <div class="neon-bg blob"></div>
@@ -540,17 +500,19 @@ body {
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <!-- How We Work Section -->
 <section class="relative z-10 py-12 sm:py-20 px-4">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12 sm:mb-16 slide-up">
-      <h2 class="section-title text-3xl sm:text-4xl md:text-5xl font-black mb-4 sm:mb-6 text-shadow">
-        ¿Cómo <span class="text-gold">trabajamos?</span>
+      <h2 class="section-title text-3xl sm:text-4xl md:text-5xl font-black mb-4 sm:mb-6 gradient-text">
+        ¿Cómo trabajamos?
       </h2>
       <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-        La metodología que cambiará tu negocio
+        La metodología que convierte tu trabajo en resultados predecibles:
+        <span class="block text-gold"><b>Más ingresos, menos esfuerzo operativo.</b></span>
       </p>
     </div>
 
@@ -570,53 +532,54 @@ body {
         </div>
       </div>
     </div>
+    
     <!-- Process Steps -->
             <div class="grid md:grid-cols-2 gap-8 slide-up">
-                <div class="card-glass rounded-2xl p-8">
+                <div class="card-glass rounded-2xl p-8 bg-black/30">
                     <div class="flex items-center mb-6">
                         <div class="w-8 h-8 bg-gold text-black rounded-full flex items-center justify-center font-bold mr-4">1</div>
-                        <h3 class="text-xl font-bold">Diagnóstico en Profundidad</h3>
+                        <h3 class="text-xl font-bold">Consultoría y Auditoría</h3>
                     </div>
                     <ul class="space-y-3 text-gray-300">
-                        <li>• Mapeamos los procesos y sistemas actuales</li>
-                        <li>• Identificamos las oportunidades de mejora</li>
-                        <li>• Informe estratégico con mejores targetes</li>
+                        <li>• Analizamos tus procesos y sistemas actuales</li>
+                        <li>• Detectamos cuellos de botella y oportunidades </li>
+                        <li>• Informe sobre mejoras en marketing y ventas</li>
                     </ul>
                 </div>
 
-                <div class="card-glass rounded-2xl p-8">
+                <div class="card-glass rounded-2xl p-8 bg-black/30">
                     <div class="flex items-center mb-6">
                         <div class="w-8 h-8 bg-gold text-black rounded-full flex items-center justify-center font-bold mr-4">2</div>
                         <h3 class="text-xl font-bold">Diseño Estratégico</h3>
                     </div>
                     <ul class="space-y-3 text-gray-300">
-                        <li>• Definimos una estrategia personalizada</li>
-                        <li>• Establecemos herramientas y automatizaciones a implementar</li>
-                        <li>• Estructuramos el método de escalado idóneo</li>
+                        <li>• Diseñamos una estrategia 100% personalizada</li>
+                        <li>• Definimos herramientas y procesos a implementar</li>
+                        <li>• Estructuramos un plan de acción con fechas y con beneficios claros</li>
                     </ul>
                 </div>
 
-                <div class="card-glass rounded-2xl p-8">
+                <div class="card-glass rounded-2xl p-8 bg-black/30">
                     <div class="flex items-center mb-6">
                         <div class="w-8 h-8 bg-gold text-black rounded-full flex items-center justify-center font-bold mr-4">3</div>
-                        <h3 class="text-xl font-bold">Integración del Ecosistema</h3>
+                        <h3 class="text-xl font-bold">Integración con tu Ecosistema</h3>
                     </div>
                     <ul class="space-y-3 text-gray-300">
-                        <li>• Creación del método de ventas optimizado</li>
-                        <li>• Preparación de los CRM</li>
-                        <li>• Automatización de procesos, herramientas y workflows</li>
+                        <li>• Desarrollo de soluciones acordadas </li>
+                        <li>• Integración de soluciones y sistemas en tu modelo operativo</li>
+                        <li>• Automatización de procesos manuales y repetitivos</li>
                     </ul>
                 </div>
 
-                <div class="card-glass rounded-2xl p-8">
+                <div class="card-glass rounded-2xl p-8 bg-black/30">
                     <div class="flex items-center mb-6">
                         <div class="w-8 h-8 bg-gold text-black rounded-full flex items-center justify-center font-bold mr-4">4</div>
                         <h3 class="text-xl font-bold">Optimización y Escalabilidad</h3>
                     </div>
                     <ul class="space-y-3 text-gray-300">
-                        <li>• Monitoreo de datos individuales</li>
-                        <li>• Ajustes estratégicos basados en métricas</li>
-                        <li>• Capacitación de los equipos de ventas comercial</li>
+                        <li>• OMonitoreo de datos para mejorar la toma de decisiones</li>
+                        <li>• Estudio de rendimientos en marketing y ventas para aumentar ingresos mes a mes</li>
+                        <li>• Soporte técnico y acompañamiento del equipo comercial</li>
                     </ul>
                 </div>
             </div>
@@ -632,7 +595,7 @@ body {
   </div>
             </div>
         </div>
-    </section>
+      </section>
 
     <!-- Footer -->
     <footer class="relative z-10 glass-effect py-12 px-4 mt-20">
@@ -667,83 +630,92 @@ body {
     
 
 
-    <script>
-        //Menu haburguesa
-         const toggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
 
-  toggle.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.contains('hidden');
-    mobileMenu.classList.toggle('hidden');
-    toggle.innerHTML = isOpen ? '&times;' : '&#9776;';
-  });
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+    // Menú hamburguesa
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-        // Add scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    if (toggle && mobileMenu) {
+      toggle.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        toggle.innerHTML = isOpen ? '&times;' : '&#9776;';
+      });
+    }
 
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('slide-up');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all elements with slide-up class
-        document.querySelectorAll('.slide-up').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Button hover effects
-        document.querySelectorAll('.btn-gold').forEach(btn => {
-            btn.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-2px)';
-                this.style.boxShadow = '0 10px 25px rgba(255, 215, 0, 0.3)';
-            });
-            
-            btn.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-            });
-        });
-
-
-        // Observe all elements with section-hidden class
-        document.querySelectorAll('.section-hidden').forEach(el => {
-            observer.observe(el);
-        });
- document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll('[data-count]');
-    
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-count');
-        const count = +counter.innerText;
-        const increment = Math.ceil(target / 100); // velocidad
-        
-        if (count < target) {
-          counter.innerText = count + increment > target ? target : count + increment;
-          setTimeout(updateCount, 30); // velocidad de la animación
-        } else {
-          counter.innerText = target.toLocaleString(); // con separador de miles
+    // Smooth scrolling para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
         }
-      };
-
-      updateCount();
+      });
     });
+
+    // Animaciones scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('slide-up');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.slide-up').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Efectos hover en botones dorados
+    document.querySelectorAll('.btn-gold').forEach(btn => {
+      btn.addEventListener('mouseenter', function () {
+        this.style.transform = 'translateY(-2px)';
+        this.style.boxShadow = '0 10px 25px rgba(245, 187, 35, 0.3)';
+      });
+
+      btn.addEventListener('mouseleave', function () {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = 'none';
+      });
+    });
+
+    // Contador animado
+    function animateCount(el, end, duration = 2000) {
+      let start = 0;
+      let increments = 30;
+      let stepTime = duration / increments;
+      let incrementValue = end / increments;
+      let current = start;
+      let timer = setInterval(() => {
+        current = Math.min(current + incrementValue, end);
+        if (current === end) clearInterval(timer);
+
+       if (end >= 1000000) {
+  el.innerHTML = (current / 1000000).toFixed(1) + 'M <img src="up-flecha.png" alt="up" style="height:1em; width:auto; vertical-align: middle; margin-left: 0.15em; transform: translateY(-2px);">';
+} else {
+  el.textContent = Math.floor(current);
+}
+      }, stepTime);
+    }
+
+    const el = document.getElementById("facturacion");
+    if (el) {
+      const countTo = parseInt(el.getAttribute("data-count"), 10);
+      animateCount(el, countTo);
+    }
+
   });
-    </script>
+</script>
 </body>
 </html>
+
